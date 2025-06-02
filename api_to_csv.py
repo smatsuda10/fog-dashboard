@@ -65,7 +65,7 @@ def main():
         uri = f"{service}&station={station}"
         print(f"Downloading: {station}")
         data = download_data(uri)
-        outfn = f"data/{station}_{startts:%Y%m%d%H%M}_{endts:%Y%m%d%H%M}.txt"
+        outfn = f"data/{station}_{startts:%Y%m%d%H%M}_{endts:%Y%m%d%H%M}.csv"
         with open(outfn, "w", encoding="ascii") as fh:
             fh.write(data)
 
