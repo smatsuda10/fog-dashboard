@@ -1,0 +1,31 @@
+# Python virtual environments
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# dbt compiled artifacts
+fog_dashboard_dbt/target/
+fog_dashboard_dbt/dbt_modules/
+fog_dashboard_dbt/logs/
+fog_dashboard_dbt/.dbt/
+
+# Local data files (optional, if you're storing local API pulls)
+data/*.csv
+
+# API keys or credentials
+fog_dashboard_dbt/.secrets/
+
+# System files
+.DS_Store
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# VSCode settings (if shared, consider keeping some)
+.vscode/

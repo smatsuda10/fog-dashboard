@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: staging_raw_hourly_data
+    description: "Stage the raw hourly data from the API"
+
+sources:
+  - name: fog_dashboard_project
+    database: fog-dashboard-dev	
+    schema: fog_weather_data
+    tables:
+      - name: hourly_weather_pacifica
+        description: "Hourly weather data at the Pacifica weather station"
