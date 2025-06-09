@@ -4,6 +4,11 @@ version: 2
 models:
   - name: staging_raw_hourly_data
     description: "Stage the raw hourly data from the API"
+    columns:
+      - name: timestamp
+        description: "Timestamp of the reading"
+      - name: temp_f
+        description: "Temperature in Fahrenheit"
 
 sources:
   - name: fog_dashboard_project
